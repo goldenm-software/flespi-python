@@ -12,12 +12,12 @@ $ pip3 install flespi
 
 ### Usage
 ```python
-from flespi import Flespi
+from flespi.rest import FlespiClient
 
-token = 'your_token'
+token = 'your_token' # Without "FlespiToken"
 is_development = True
 # Initialize Flespi instance
-flespi = Flespi(token=token, is_development=is_development)
+flespi = FlespiClient(token=token, is_development=is_development)
 
 response = flespi.get('gw/devices/all')
 
