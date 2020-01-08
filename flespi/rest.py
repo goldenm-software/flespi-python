@@ -93,7 +93,7 @@ class FlespiClient:
     """Validate response method"""
 
     return  {
-      'error': request.status_code == 200,
+      'error': request.status_code != 200,
       'code': request.status_code,
       'message': request.json()
     }
