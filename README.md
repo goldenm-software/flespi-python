@@ -19,7 +19,7 @@ is_development = True
 # Initialize Flespi instance
 flespi = FlespiClient(token=token, is_development=is_development)
 
-response = flespi.get('gw/devices/all')
+response = flespi.get('/gw/devices/all')
 
 print(response)
 ```
