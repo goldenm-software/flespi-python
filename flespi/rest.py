@@ -19,7 +19,7 @@ class FlespiClient:
 
     URL = self.url + method
     if self.is_development:
-      self.print_request(URL)
+      self.print_request(URL, 'GET')
     try:
       request = requests.get(URL, headers=self.headers)
       return self.validate_response(request)
@@ -33,7 +33,7 @@ class FlespiClient:
     """POST method"""
     URL = self.url + method
     if self.is_development:
-      self.print_request(URL)
+      self.print_request(URL, 'POST')
       self.print_parameters(params)
     try:
       request = requests.post(URL, headers=self.headers, json=params)
@@ -49,7 +49,7 @@ class FlespiClient:
 
     URL = self.url + method
     if self.is_development:
-      self.print_request(URL)
+      self.print_request(URL, 'PUT')
       self.print_parameters(params)
     try:
       request = requests.put(URL, headers=self.headers, json=params)
@@ -65,7 +65,7 @@ class FlespiClient:
 
     URL = self.url + method
     if self.is_development:
-      self.print_request(URL)
+      self.print_request(URL, 'DELETE')
     try:
       request = requests.delete(URL, headers=self.headers)
       return self.validate_response(request)
@@ -75,11 +75,11 @@ class FlespiClient:
         'reason': err
       }
 
-  def print_request(self, url):
+  def print_request(self, url, request_type):
     """Print request method"""
 
     print("================ FLESPI REQUEST ================")
-    print("Request: DELETE {}".format(url))
+    print(f"Request: {request_type} {url}")
     print("================================================")
 
   def print_parameters(self, parameters):
