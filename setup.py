@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
   name="flespi",
-  version="1.0.0",
+  version="1.1.0",
   author="Golden M",
   author_email="support@goldenmcorp.com",
   description="Flespi REST API for Python",

@@ -1,6 +1,8 @@
 # flespi-Python
 
 flespi-python is a flespi Rest API Wrapper for python language.
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/goldenm-software/flespi-python/blob/master/LICENSE)
+[![pypi version](https://badge.fury.io/py/flespi.svg)](https://pypi.org/project/flespi/)
 
 # Installation
 Use the package manager pip to install flespi-python.
