@@ -1,11 +1,11 @@
 [project]
 name = "flespi"
-version = "1.2.3"
+version = "1.2.2"
 description = "Flespi REST API for Python"
 authors = [
   {name = "Golden M, Inc.", email = "software@goldenm.com"}
 ]
-requires-python = ">=3.8 <3.12"
+requires-python = ">=3.8,<3.12"
 maintainers = [
   {name = "Kenny Mochizuki", email = "kenny@goldenm.com"}
 ]
