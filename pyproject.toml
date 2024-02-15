@@ -19,6 +19,9 @@ classifiers = [
 dependencies = [
   "requests",
 ]
+readme = "README.md"
+
+license = {text = "MIT License"}
 
 [project.urls]
 Repository = "https://github.com/goldenm-software/flespi-python"
