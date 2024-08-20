@@ -1,16 +1,18 @@
 """Flespi REST API Class"""
+
 import logging
 
 import requests
 
 log = logging.getLogger('flespi.rest.client')
 
+
 class FlespiClient:
   """
-    A helper client to work with Flespi REST API.
-    """
+  A helper client to work with Flespi REST API.
+  """
 
-  def __init__(self, token='', is_development=False):  # pylint: disable=W0613
+  def __init__(self, token=''):
     """
     Constructor
     ...
@@ -29,7 +31,7 @@ class FlespiClient:
 
   @property
   def _headers(self):
-    """ Headers """
+    """Headers"""
     return {'Accept': 'application/json', 'Authorization': f'FlespiToken {self._token}'}
 
   def get(self, method):
