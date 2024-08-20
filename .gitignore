@@ -5,6 +5,5 @@
 /**/*.pyc
 /.DS_Store
 /.venv
-.vscode/*
-!.vscode/settings.json
 /**/*/__pycache__
+.ruff-cache/
