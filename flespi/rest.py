@@ -158,5 +158,5 @@ class FlespiClient:
       # log.fatal('Response validation failed: %s', err)
       return {
         'error': True,
-        'reason': 'Invalid JSON response',
+        'reason': f'Invalid JSON response: {request.text}',
       }
