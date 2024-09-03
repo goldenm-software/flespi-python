@@ -154,8 +154,8 @@ class FlespiClient:
         'code': request.status_code,
         'message': request.json(),
       }
-    except ValueError as err:
-      log.fatal('Response validation failed: %s', err)
+    except ValueError:
+      # log.fatal('Response validation failed: %s', err)
       return {
         'error': True,
         'reason': 'Invalid JSON response',
